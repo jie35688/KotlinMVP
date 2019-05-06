@@ -15,14 +15,13 @@ import java.util.ArrayList
 
 object SPUtil {
 
-    private var mSharedPreferences: SharedPreferences? = null
 
-    private val preferneces: SharedPreferences?
+    private var preferneces: SharedPreferences? = null
         @Synchronized get() {
-            if (mSharedPreferences == null) {
-                mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(VrHouseApp.getInstance())
+            if (preferneces == null) {
+                preferneces = PreferenceManager.getDefaultSharedPreferences(VrHouseApp.getInstance())
             }
-            return mSharedPreferences
+            return preferneces
         }
 
     /**

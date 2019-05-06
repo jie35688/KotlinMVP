@@ -16,8 +16,6 @@ class VrHouseApp: Application() {
     companion object{
         private var instance: VrHouseApp? = null
 
-        @Synchronized
-        @JvmStatic
         fun getInstance(): VrHouseApp {
             return instance!!
         }
