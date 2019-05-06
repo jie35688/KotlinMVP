@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义toolbar 相关属性设置 -->
+    <declare-styleable name="VRToolbar">
+        <attr name="backEnabled" format="boolean" />
+        <attr name="title" format="string" />
+        <attr name="modeEnabled" format="boolean"/>
+    </declare-styleable>
+</resources>

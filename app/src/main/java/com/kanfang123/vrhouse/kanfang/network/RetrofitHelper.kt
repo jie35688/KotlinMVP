@@ -32,7 +32,7 @@ class RetrofitHelper {
             builder.addInterceptor(Interceptor {
                 chain ->
                 var request: Request = chain.request()
-                if (!"true".equals(request.header("notoken"))) {
+                if ("true" != request.header("notoken")) {
                     request = request.newBuilder()
                             .addHeader("Authorization",SPUtil.getString(VrConstants.USER_TOKEN))
                             .method(request.method(),request.body())
